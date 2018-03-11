@@ -1,0 +1,236 @@
+/* 375 x 667
+
+red
+#ef4935
+
+white
+#fbe8d2
+
+
+*/
+body {
+  background-color: #fbe8d2;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 0;
+  color: #fbe8d2;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+h2 {
+  color: #fbe8d2;
+  margin: 0;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  font-family: roboto;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+=========================================================================
+HEADER
+=========================================================================
+*/
+
+header {
+  background-color: #ef4935;
+  height: 10vh;
+  width: 95vw;
+  border-radius: 0 0 .5em .5em;
+  position: fixed;
+  top: 0;
+  left: 2.5vw;
+  z-index: 100;
+}
+
+header>nav>ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5vh 1em;
+}
+
+header>nav>ul>li {}
+
+header>nav>ul>li>a>img {
+  height: 2em;
+  width: 2em;
+}
+
+/* headerbg shader */
+
+.bgHeader {
+  height: 20vh;
+  background: linear-gradient(#fbe8d2, #fbe8d2, rgba(0, 0, 0, 0));
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+}
+
+/*
+=========================================================================
+Main @ home
+=========================================================================
+*/
+
+main {
+  width: 95vw;
+  height: 80vh;
+  margin: 1em auto;
+  margin-top: 13vh;
+}
+
+main>article>a {
+  height: 20vw;
+  width: 100%;
+  background-color: #ef4935;
+  margin-bottom: 2vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+  box-sizing: border-box;
+  border-radius: .5em;
+}
+
+main>article>a>img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.bottomButton {
+  position: absolute;
+  width: 35vw;
+  height: 35vw;
+  background-color: #ef4935;
+  bottom: 1em;
+  z-index: 1;
+  overflow: hidden;
+  left: 32.5vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomButton img {
+  height: 50%;
+}
+
+/*
+=========================================================================
+Main @ profile
+=========================================================================
+*/
+
+main#profileMain>h3 {
+  text-align: center;
+  color: #ef4935;
+  font-family: courier;
+}
+
+main#profileMain>article>a {
+  display: inline-block;
+  text-align: center;
+  padding-top: 1vh;
+}
+
+.cassDone {
+  background-color: rgba(0, 0, 0, 0);
+  border: solid .1em #ef4935;
+}
+
+.cassDone>h2 {
+  color: #ef4935;
+}
+
+/*
+=========================================================================
+Main @ cassette
+=========================================================================
+*/
+
+.redbg {
+  background-color: #ef4935;
+}
+
+.redbg>header {
+  background-color: #fbe8d2;
+}
+
+.redbg>header h1 {
+  color: #ef4935;
+}
+
+main#cassetteMain {
+  padding-top: 10vh;
+  height: 70vh;
+}
+
+main#cassetteMain h2 {
+  text-align: center;
+  font-size: 3em;
+  font-family: courier;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 5vh;
+}
+
+main#cassetteMain h3 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #fbe8d2;
+  font-weight: 100;
+}
+main#cassetteMain>section#player {
+  width: 60vw;
+  height: 20vh;
+  left: 20vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 10vh;
+}
+
+main#cassetteMain>section#player>a {
+  color: #fbe8d2;
+  font-size: 2em;
+  font-weight: 900;
+  width: 2em;
+  text-align:center;
+  margin: 0;
+}
+
+/* bggradients */
+
+.bgGrad {
+  position: fixed;
+  top: 0;
+  height: 95vh;
+  width: 80vw;
+  left: 10vw;
+  z-index: -100;
+  background: linear-gradient( rgba(0, 0, 0, 0), #fbe8d2);
+  border-radius: 1em;
+  opacity: .5;
+}
+
+.redGrad {
+  background: linear-gradient( rgba(0, 0, 0, 0), #ef4935);
+}
+
+.whiteGrad {
+  background: linear-gradient( rgba(0, 0, 0, 0), #fbe8d2);
+}
